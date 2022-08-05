@@ -73,11 +73,10 @@ Plug 'pangloss/vim-javascript'
     Plug 'honza/vim-snippets'
     
     Plug 'nvim-lualine/lualine.nvim'
-    Plug 'ojroques/nvim-hardline'
 
 
     Plug 'preservim/nerdcommenter'
-"    Plug 'mhinz/vim-startify'
+"   Plug 'mhinz/vim-startify'
     Plug 'romgrk/barbar.nvim'
     Plug 'dense-analysis/ale'
     Plug 'sbdchd/neoformat'
