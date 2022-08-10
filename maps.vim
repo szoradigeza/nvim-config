@@ -4,12 +4,23 @@ nmap sv :vsplit<Return><C-w>w
 
 let mapleader = " " " map leader to Space
 map <leader>t :NvimTreeFocus<CR>
-nnoremap <C-p> <cmd>Telescope find_files<cr>
-nnoremap <C-o> <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+map <leader>tt :NvimTreeFindFile<CR>
+
+
+
+
+
+map <C-P>  <cmd>Telescope find_files<CR>
+map <C-o> <cmd>Telescope live_grep<cr>
+map <leader>fb <cmd>Telescope buffers<cr>
+map <leader>fh <cmd>Telescope help_tags<cr>
+map <leader>s <cmd>vsplit<cr>
 
 map <C-s> <cmd>:w <cr>
+map <esc> :noh <CR>
+
+
+
 
 lua << EOF
 

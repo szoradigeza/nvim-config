@@ -61,6 +61,11 @@ clean-stack@^2.0.0:
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
   integrity sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==
 
+coc-jedi@^0.32.0:
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/coc-jedi/-/coc-jedi-0.32.0.tgz#492a7787521033d754437971dd5427d01e7d047e"
+  integrity sha512-bMwcwxwO3scgaI6OMRtyksJdmWPwliOVnyEOLx1B/i/XJ8YomkG/URAxaUEHYQqRQYD5yRD8DmDjpFbbHkuMtA==
+
 commander@^9.0.0:
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.4.0.tgz#bc4a40918fefe52e22450c111ecd6b7acce6f11c"

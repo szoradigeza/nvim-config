@@ -1,0 +1,15 @@
+{
+  "python.pythonPath": "/usr/bin/python3",
+  "python.linting.enabled": true,
+  "python.jediEnabled": false,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json"
+  ]
+}
