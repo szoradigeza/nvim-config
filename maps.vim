@@ -21,6 +21,10 @@ map <esc> :noh <CR>
 
 
 
+if &wildoptions =~ "pum"
+    cnoremap <expr> <up> pumvisible() ? "<C-p>" : "\\<up>"
+    cnoremap <expr> <down> pumvisible() ? "<C-n>" : "\\<down>"
+endif
 
 lua << EOF
 

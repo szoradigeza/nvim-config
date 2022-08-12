@@ -11,5 +11,7 @@
     "typescript",
     "typescriptreact",
     "json"
-  ]
+  ],
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false
 }
