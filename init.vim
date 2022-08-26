@@ -15,10 +15,11 @@
     let g:loaded_netrw             = 1
     let g:loaded_netrwPlugin       = 1
     let g:loaded_tutor_mode_plugin = 1
-    let g:loaded_remote_plugins    = 1
+    let g:loaded_remote_plugins    = 1 
+  
+    let g:winresizer_start_key = '<C-m>'
 
-    set nonumber
-    set norelativenumber
+    set colorcolumn=0
     set nocursorcolumn
     set nocursorline
 
@@ -29,7 +30,7 @@
     au! BufNewFile,BufRead *.json set foldmethod=indent
 
     set runtimepath+=~/.vim_runtime
-    set termguicolors
+       set termguicolors
 
     set nocompatible            " disable compatibility to old-time vi
     set showmatch               " show matching 
@@ -43,17 +44,13 @@
     set shiftwidth=4            " width for autoindents
     set autoindent              " indent a new line the same amount as the line just typed
     set number                  " add line numbers
-    set cc=80                  " set an 80 column border for good coding style
+    set relativenumber
     filetype plugin indent on   "allow auto-indenting depending on file type
     syntax on                   " syntax highlighting
     set mouse=a                 " enable mouse click
     set clipboard=unnamedplus   " using system clipboard
     filetype plugin on
-    set cursorline              " highlight current cursorline
-    set ttyfast                 " Speed up scrolling in Vim
-    " set spell                 " enable spell check (may need to download language package)
-    " set noswapfile            " disable creating swap file
-    " set backupdir=~/.cache/vim " Directory to store backup files.
+    set cursorline              " highlight current cursorline 
 
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
@@ -77,6 +74,8 @@
         Plug 'mlaursen/vim-react-snippets'
         Plug 'simeji/winresizer'
         Plug 'tpope/vim-fugitive'
+        Plug 'lukas-reineke/indent-blankline.nvim'
+
 
 
 
@@ -131,6 +130,8 @@
         Plug 'folke/which-key.nvim'
         Plug 'camspiers/lens.vim'
         Plug 'TimUntersberger/neogit'
+        Plug 'karb94/neoscroll.nvim'
+        Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
 
 
@@ -193,13 +194,44 @@ neogit.setup {
           }
       }
 
+require("indent_blankline").setup {
+    -- for example, context is off by default, use this to turn it on
+  
+}
+
+
+require('neoscroll').setup()
+require('neoscroll').setup({
+    easing_function = "quadratic" -- Default easing function
+    -- Set any other options as needed
+})
+
+local t = {}
+-- Syntax: t[keys] = {function, {function arguments}}
+-- Use the "sine" easing function
+t['<C-k>'] = {'scroll', {'-vim.wo.scroll', 'true', '350', [['sine']]}}
+t['<C-j>'] = {'scroll', { 'vim.wo.scroll', 'true', '350', [['sine']]}}
+
+
+
+
+
+require('neoscroll.config').set_mappings(t)
+
+
 
 EOF
 
-
-
-
-
+map <C-u> <Nop>
+map <C-d> <Nop>
+map <C-b> <Nop>
+map <C-f> <Nop>
+map <C-y> <Nop>
+map <C-e> <Nop>
+map <C-e> <Nop>
+map zz <Nop>
+map zt <Nop>
+map zb <Nop>
 
 
 
