@@ -12,8 +12,14 @@ map <leader>tt :NvimTreeFindFile<CR>
 
 
 
-map  <silent>  <C-P>  <cmd>Telescope find_files<CR>
-map  <silent>  <C-o> <cmd>Telescope live_grep<cr>
+map  <silent>  <C-P>  <cmd>Telescope find_files hidden=true<CR>
+map  <silent>  <C-o> <cmd>Telescope live_grep hidden=true<cr>
+"nnoremap <silent>  <C-P> :lua require'telescope.builtin'.find_files({hidden=true})<CR>
+"nnoremap <silent>  <C-o> :lua "require'telescope.builtin'.live_grep({hidden=true})  <CR>
+
+
+
+
 map  <silent>  <leader>b <cmd>Telescope buffers<cr>
 map  <silent>  <leader>\ <cmd>BufferCloseAllButCurrent<CR>
 map  <silent>  <leader>th <cmd>Telescope help_tags<cr>
@@ -23,7 +29,7 @@ nmap  <silent>  <leader>s <cmd>vsplit<cr>
 "nmap <C-j> <C-e>
 
 
-map <C-s> <cmd>:w <cr>
+map <silent> <C-s> <cmd>:w <cr>
 map  <silent>  <esc> :noh <CR>
 
 
