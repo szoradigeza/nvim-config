@@ -1,18 +1,20 @@
 {
-    "python.pythonPath": "/usr/bin/python3",
-    "python.linting.enabled": true,
-    "python.jediEnabled": false,
-    "javascript.suggest.autoImports": true,
-    "typescript.suggest.autoImports": true,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "css",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "json"
-    ],
-    "diagnostic.virtualText": true,
-    "diagnostic.virtualTextCurrentLineOnly": false,
-    "eslint.autoFixOnSave": true
+  "python.pythonPath": "/usr/bin/python3",
+  "python.linting.enabled": true,
+  "python.jediEnabled": false,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json"
+  ],
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "tsserver.log": "verbose",
+  "eslint.autoFixOnSave": false,
+  "prettier.enable": true
 }
