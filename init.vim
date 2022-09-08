@@ -65,16 +65,22 @@
 
 
 
-    "------------------------ COC ------------------------
-    " coc for tslinting, auto complete and prettier
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " coc extensions
+        Plug 'neovim/nvim-lspconfig'
+        Plug 'hrsh7th/nvim-cmp' 
+          Plug 'hrsh7th/cmp-nvim-lsp'
+          Plug 'L3MON4D3/LuaSnip', {'tag': 'v<CurrentMajor>.*'}
+
+
+          Plug 'jose-elias-alvarez/null-ls.nvim'
+        Plug 'MunifTanjim/prettier.nvim'
+
         Plug 'xiyaowong/nvim-transparent'
         Plug 'SirVer/ultisnips'
         Plug 'mlaursen/vim-react-snippets'
         Plug 'simeji/winresizer'
         Plug 'tpope/vim-fugitive'
         Plug 'lukas-reineke/indent-blankline.nvim'
+        Plug 'ray-x/lsp_signature.nvim'
 
 
 
@@ -143,12 +149,6 @@ call plug#end()
 runtime ./maps.vim
 
 
-
-
-
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
-
-
 lua << EOF
     vim.cmd('colorscheme nightfly')
 
@@ -200,7 +200,6 @@ require("indent_blankline").setup {
 }
 
 
-require('neoscroll').setup()
 require('neoscroll').setup({
     easing_function = "quadratic" -- Default easing function
     -- Set any other options as needed
