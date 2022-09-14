@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "coc-jedi": "^0.32.0",
-    "typescript": "^4.8.2",
-    "typescript-language-server": "^1.1.2"
+    "typescript": "^4.8.2"
   }
 }
