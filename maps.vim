@@ -19,7 +19,7 @@ map  <silent>  <C-o> <cmd>Telescope live_grep hidden=true<cr>
 
 
 
-
+map  <silent>  <leader>G <cmd>Neogit<cr>
 map  <silent>  <leader>b <cmd>Telescope buffers<cr>
 map  <silent>  <leader>\ <cmd>BufferCloseAllButCurrent<CR>
 map  <silent>  <leader>th <cmd>Telescope help_tags<cr>

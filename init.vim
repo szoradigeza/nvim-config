@@ -61,6 +61,9 @@
     call plug#begin(stdpath('data') . '/plugged')
 
     "------------------------ Python ------------------------
+        Plug 'amadeus/vim-mjml'
+
+    
 
 
 
@@ -68,6 +71,7 @@
     "------------------------ COC ------------------------
     " coc for tslinting, auto complete and prettier
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     " coc extensions
         Plug 'xiyaowong/nvim-transparent'
         Plug 'SirVer/ultisnips'
